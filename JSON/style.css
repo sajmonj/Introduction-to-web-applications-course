@@ -1,0 +1,101 @@
+body
+{
+    background-color: lightgray;
+}
+
+header
+{
+    text-align: center;
+}
+
+.btn
+{
+    background-color: rgb(250, 160, 127);
+    border: 2px solid rgb(250, 160, 127);
+    padding: 12px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+.btn:hover
+{
+    background-color: white;
+    border: 2px solid rgb(250, 160, 127);
+}
+
+.active
+{
+    background-color: rgb(255, 109, 56);
+    border: 2px solid rgb(255, 109, 56);
+}
+
+.sort
+{
+    background-color: rgba(205, 71, 71, 0.722);
+    color: white;
+    border: 2px solid rgba(205, 71, 71, 0.722);
+    padding: 12px;
+    margin: 5px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.sort:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.arrow
+{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right
+{
+    transform: rotate(-45deg);
+}
+
+.up
+{
+    transform: rotate(-135deg);
+}
+
+.down
+{
+    transform: rotate(45deg);
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.filter
+{
+    display : none;
+}
+
+.show
+{
+    display: block;
+}
+
+.list-element
+{
+    width: 46%;
+    margin-right: 2%;
+}
+
+#product-list
+{
+    list-style-type: circle;
+}

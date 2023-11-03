@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>List of products from JSON file</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="getData()">
+    
+    <header>
+        <h1>List of products</h1>
+    </header>
+    <section id="buttons">
+        <button id="all" class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button id="smartphones" class="btn" onclick="filterSelection('smartphones')">Smartphones</button>
+        <button id="laptops" class="btn" onclick="filterSelection('laptops')">Laptops</button>
+        <button id="fragrances" class="btn" onclick="filterSelection('fragrances')">Fragrances</button>
+        <button id="skincare" class="btn" onclick="filterSelection('skincare')">Skincare</button>
+        <button id="groceries" class="btn" onclick="filterSelection('groceries')">Groceries</button>
+        <button id="home-decoration" class="btn" onclick="filterSelection('home-decoration')">Home decorations</button>
+        <br>
+        <button class="sort" onclick="sortList()">Sort By Title &nbsp&nbsp<i class="arrow right"></i></button>
+    </section>
+
+    <ul id="product-list"></ul>
+
+</body>
+</html>
