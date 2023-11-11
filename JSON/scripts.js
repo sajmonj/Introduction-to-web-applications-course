@@ -14,7 +14,7 @@ function getData() {
             });
             originalOrder = list;
             document.querySelector("#product-list").innerHTML = list;
-            filterSelection("all");
+            filterCategories("all");
         });
 }
 
@@ -22,7 +22,8 @@ function resetSorting() {
     document.querySelector("#product-list").innerHTML = originalOrder;
     var activeFilter = document.getElementsByClassName("active");
     console.log(activeFilter[0].id);
-    filterSelection(activeFilter[0].id);
+    filterCategories(activeFilter[0].id);
+    filterNames();
 }
 
 function changeArrow(direction) {
@@ -86,7 +87,25 @@ function sortList() {
     else if (direction == "desc") changeArrow("down");
 }
 
-function filterSelection(c) {
+function filterNames() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("filterInput");
+    filter = input.value.toLowerCase();
+    ul = document.getElementById("product-list");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h3")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            li[i].style.display  = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function filterCategories(c) {
     var x, i;
     x = document.getElementsByClassName("filter");
     if (c == "all") c = "";

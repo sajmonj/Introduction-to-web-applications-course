@@ -12,14 +12,17 @@
     <header>
         <h1>List of products</h1>
     </header>
+    <section id="searchBar">
+        <input type="text" id="filterInput" onkeyup="filterNames()" placeholder="Search for products">
+    </section>
     <section id="buttons">
-        <button id="all" class="btn active" onclick="filterSelection('all')">Show all</button>
-        <button id="smartphones" class="btn" onclick="filterSelection('smartphones')">Smartphones</button>
-        <button id="laptops" class="btn" onclick="filterSelection('laptops')">Laptops</button>
-        <button id="fragrances" class="btn" onclick="filterSelection('fragrances')">Fragrances</button>
-        <button id="skincare" class="btn" onclick="filterSelection('skincare')">Skincare</button>
-        <button id="groceries" class="btn" onclick="filterSelection('groceries')">Groceries</button>
-        <button id="home-decoration" class="btn" onclick="filterSelection('home-decoration')">Home decorations</button>
+        <button id="all" class="btn active" onclick="filterCategories('all')">Show all</button>
+        <button id="smartphones" class="btn" onclick="filterCategories('smartphones')">Smartphones</button>
+        <button id="laptops" class="btn" onclick="filterCategories('laptops')">Laptops</button>
+        <button id="fragrances" class="btn" onclick="filterCategories('fragrances')">Fragrances</button>
+        <button id="skincare" class="btn" onclick="filterCategories('skincare')">Skincare</button>
+        <button id="groceries" class="btn" onclick="filterCategories('groceries')">Groceries</button>
+        <button id="home-decoration" class="btn" onclick="filterCategories('home-decoration')">Home decorations</button>
         <br>
         <button class="sort" onclick="sortList()">Sort By Title &nbsp&nbsp<i class="arrow right"></i></button>
     </section>
