@@ -1,0 +1,9 @@
+POST http://localhost:8080/create
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Francois",
+  "surname": "Lagarde",
+  "job": "bus driver"
+}

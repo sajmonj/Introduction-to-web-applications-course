@@ -1,0 +1,2 @@
+ # Microservices
+ "Microservices" are just three simple projects aimed at creating small microservice. We used three technologies: SpringBoot, Flask and Express. Express isn't fully working, because of problems with adding new data to database.
