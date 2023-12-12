@@ -22,7 +22,9 @@ router.get('/person/:id', async(req, res, next) => {
 
 router.post('/create', async (req,res,next)=> {
     try {
-        await addPerson;
+        await models.PersonSchema.create(
+            {name: 'mleko', surname: 'mleczne', job: 'farmer'}
+        );
     } catch(error){
 
     }
