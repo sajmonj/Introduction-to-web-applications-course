@@ -18,7 +18,7 @@ function App() {
           <Route index element={<Ex1 />} />
           <Route path="products" element={<Ex2 />} />
           <Route path="login" element={<Login setToken={setToken} />} />
-          <Route path="protected" render={() => (token ? <Protected token={token} /> : <redirect to="/login"/> )} />
+          <Route path="protected" element={<Protected token={token} />} />
         </Route>
       </Routes>
     </BrowserRouter>
